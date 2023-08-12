@@ -676,7 +676,7 @@ h3 {
 	}
 
 	.keputusan-negeri-peletakganti {
-		display: none;
+		display: inherit;
 	}
 	
 	.keputusan-anak-logo {
