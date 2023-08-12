@@ -587,7 +587,8 @@ h3 {
 	color: white;
   	font-family: 'Montserrat', 'Reem Kufi', 'Segoe UI', 'IBM Plex Sans Arabic', 'Al Bayan', 'Ebrima', sans-serif;
 	font-size: 2em;
-	font-weight: 900;
+	font-weight: 600;
+	line-height: 1;
 }
 
 .kotak-jelma-tutup {
