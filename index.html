@@ -1050,36 +1050,6 @@
 						<div style="padding: 0px 8px; font-size: 0.8em; align-self: center; display: flex;">P.036 KUALA TERENGGANU<br/>ڤ.036 کوالا ترڠݢانو</div>
 						<div class="keputusan-negeri-peletakganti"><img src="./aset/negeri/peletakganti.SVG" style="width: 50px;"></div>
 					</div>
-					<div class="keputusan latar-bp">
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-ph.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-								<div class="keputusan-anak-nama-bekas">
-									<div class="keputusan-anak-nama">Pakatan Harapan</br>ڤاکتن هارڤن</div>
-								</div>
-								<div class="keputusan-anak-kerusi-angka-bekas">
-								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bp" class="keputusan-anak-kerusi-angka">0</div>
-									</div>
-								</div>
-					</div>
-					<script type="text/javascript">
-						function keputusanBPktg() {
-							var xhttp = new XMLHttpRequest();
-							xhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bp").innerHTML = this.responseText;
-								}
-							};
-							xhttp.open("GET", "./keputusan/ktg/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
-							xhttp.send();
-							console.log("BP-Berjaya");
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBPktg();
-							setInterval(keputusanBPktg, 30000);
-							console.log("BP-Mula");
-						});
-					</script>
 					<div class="keputusan latar-ps">
 								<div class="keputusan-anak-logo"><img src="./aset/parti/k-ps.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 								<div class="keputusan-anak-nama-bekas">
@@ -1108,6 +1078,36 @@
 							keputusanPNktg();
 							setInterval(keputusanPNktg, 30000);
 							console.log("PN-Mula");
+						});
+					</script>
+					<div class="keputusan latar-bp">
+								<div class="keputusan-anak-logo"><img src="./aset/parti/k-ph.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+								<div class="keputusan-anak-nama-bekas">
+									<div class="keputusan-anak-nama">Pakatan Harapan</br>ڤاکتن هارڤن</div>
+								</div>
+								<div class="keputusan-anak-kerusi-angka-bekas">
+								<div class="keputusan-anak-kerusi">
+										<div id="keputusan-bp" class="keputusan-anak-kerusi-angka">0</div>
+									</div>
+								</div>
+					</div>
+					<script type="text/javascript">
+						function keputusanBPktg() {
+							var xhttp = new XMLHttpRequest();
+							xhttp.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									document.getElementById("keputusan-bp").innerHTML = this.responseText;
+								}
+							};
+							xhttp.open("GET", "./keputusan/ktg/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
+							xhttp.send();
+							console.log("BP-Berjaya");
+						}
+						
+						document.addEventListener('DOMContentLoaded', function () {
+							keputusanBPktg();
+							setInterval(keputusanBPktg, 30000);
+							console.log("BP-Mula");
 						});
 					</script>
 					</div>
