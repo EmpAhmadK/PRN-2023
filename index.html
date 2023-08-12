@@ -74,36 +74,6 @@
 						<div style="padding: 0px 8px;">SEMUA NEGERI<br/>سموا نݢري</div>
 						<div class="keputusan-negeri-peletakganti"><img src="./aset/negeri/peletakganti.SVG" style="width: 50px;"></div>
 					</div>
-					<div class="keputusan latar-bp">
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bp.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-								<div class="keputusan-anak-nama-bekas">
-									<div class="keputusan-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
-								</div>
-								<div class="keputusan-anak-kerusi-angka-bekas">
-								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-mys-bp" class="keputusan-anak-kerusi-angka">0</div>
-									</div>
-								</div>
-					</div>
-					<script type="text/javascript">
-						function keputusanBPmys() {
-							var xhttp = new XMLHttpRequest();
-							xhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-mys-bp").innerHTML = this.responseText;
-								}
-							};
-							xhttp.open("GET", "./keputusan/mys/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
-							xhttp.send();
-							console.log("BP-Berjaya");
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBPmys();
-							setInterval(keputusanBPmys, 30000);
-							console.log("BP-Mula");
-						});
-					</script>
 					<div class="keputusan latar-pn">
 								<div class="keputusan-anak-logo"><img src="./aset/parti/k-sn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 								<div class="keputusan-anak-nama-bekas">
@@ -132,6 +102,36 @@
 							keputusanPNmys();
 							setInterval(keputusanPNmys, 30000);
 							console.log("PN-Mula");
+						});
+					</script>
+					<div class="keputusan latar-bp">
+								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bp.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+								<div class="keputusan-anak-nama-bekas">
+									<div class="keputusan-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
+								</div>
+								<div class="keputusan-anak-kerusi-angka-bekas">
+								<div class="keputusan-anak-kerusi">
+										<div id="keputusan-mys-bp" class="keputusan-anak-kerusi-angka">0</div>
+									</div>
+								</div>
+					</div>
+					<script type="text/javascript">
+						function keputusanBPmys() {
+							var xhttp = new XMLHttpRequest();
+							xhttp.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									document.getElementById("keputusan-mys-bp").innerHTML = this.responseText;
+								}
+							};
+							xhttp.open("GET", "./keputusan/mys/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
+							xhttp.send();
+							console.log("BP-Berjaya");
+						}
+						
+						document.addEventListener('DOMContentLoaded', function () {
+							keputusanBPmys();
+							setInterval(keputusanBPmys, 30000);
+							console.log("BP-Mula");
 						});
 					</script>
 					<div class="keputusan latar-md"> <!--style="box-shadow: yellow 0px 0px 20px, black 0px 0px 5px;"-->
@@ -222,36 +222,6 @@
 						<div style="padding: 0px 8px;">KEDAH<br/>قدح</div>
 						<div class="keputusan-negeri-peletakganti"><img src="./aset/negeri/peletakganti.SVG" style="width: 50px;"></div>
 					</div>
-					<div class="keputusan latar-bp">
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bp.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-								<div class="keputusan-anak-nama-bekas">
-									<div class="keputusan-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
-								</div>
-								<div class="keputusan-anak-kerusi-angka-bekas">
-								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-kdh-bp" class="keputusan-anak-kerusi-angka">0</div>
-									</div>
-								</div>
-					</div>
-					<script type="text/javascript">
-						function keputusanBPkdh() {
-							var xhttp = new XMLHttpRequest();
-							xhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-kdh-bp").innerHTML = this.responseText;
-								}
-							};
-							xhttp.open("GET", "./keputusan/kdh/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
-							xhttp.send();
-							console.log("BP-Berjaya");
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBPkdh();
-							setInterval(keputusanBPkdh, 30000);
-							console.log("BP-Mula");
-						});
-					</script>
 					<div class="keputusan latar-pn">
 								<div class="keputusan-anak-logo"><img src="./aset/parti/k-pn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 								<div class="keputusan-anak-nama-bekas">
@@ -280,6 +250,36 @@
 							keputusanPNkdh();
 							setInterval(keputusanPNkdh, 30000);
 							console.log("PN-Mula");
+						});
+					</script>
+					<div class="keputusan latar-bp">
+								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bp.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+								<div class="keputusan-anak-nama-bekas">
+									<div class="keputusan-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
+								</div>
+								<div class="keputusan-anak-kerusi-angka-bekas">
+								<div class="keputusan-anak-kerusi">
+										<div id="keputusan-kdh-bp" class="keputusan-anak-kerusi-angka">0</div>
+									</div>
+								</div>
+					</div>
+					<script type="text/javascript">
+						function keputusanBPkdh() {
+							var xhttp = new XMLHttpRequest();
+							xhttp.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									document.getElementById("keputusan-kdh-bp").innerHTML = this.responseText;
+								}
+							};
+							xhttp.open("GET", "./keputusan/kdh/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
+							xhttp.send();
+							console.log("BP-Berjaya");
+						}
+						
+						document.addEventListener('DOMContentLoaded', function () {
+							keputusanBPkdh();
+							setInterval(keputusanBPkdh, 30000);
+							console.log("BP-Mula");
 						});
 					</script>
 					<div class="keputusan latar-bl">
@@ -340,36 +340,6 @@
 						<div style="padding: 0px 8px;">KELANTAN<br/>کلنتن</div>
 						<div class="keputusan-negeri-peletakganti"><img src="./aset/negeri/peletakganti.SVG" style="width: 50px;"></div>
 					</div>
-					<div class="keputusan latar-bn">
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bp.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-								<div class="keputusan-anak-nama-bekas">
-									<div class="keputusan-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
-								</div>
-								<div class="keputusan-anak-kerusi-angka-bekas">
-								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-klt-bp" class="keputusan-anak-kerusi-angka">0</div>
-									</div>
-								</div>
-					</div>
-					<script type="text/javascript">
-						function keputusanBPklt() {
-							var xhttp = new XMLHttpRequest();
-							xhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-klt-bp").innerHTML = this.responseText;
-								}
-							};
-							xhttp.open("GET", "./keputusan/klt/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
-							xhttp.send();
-							console.log("BP-Berjaya");
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBPklt();
-							setInterval(keputusanBPklt, 30000);
-							console.log("BP-Mula");
-						});
-					</script>
 					<div class="keputusan latar-ps">
 								<div class="keputusan-anak-logo"><img src="./aset/parti/k-ps.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 								<div class="keputusan-anak-nama-bekas">
@@ -398,6 +368,36 @@
 							keputusanPNklt();
 							setInterval(keputusanPNklt, 30000);
 							console.log("PN-Mula");
+						});
+					</script>
+					<div class="keputusan latar-bn">
+								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bp.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+								<div class="keputusan-anak-nama-bekas">
+									<div class="keputusan-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
+								</div>
+								<div class="keputusan-anak-kerusi-angka-bekas">
+								<div class="keputusan-anak-kerusi">
+										<div id="keputusan-klt-bp" class="keputusan-anak-kerusi-angka">0</div>
+									</div>
+								</div>
+					</div>
+					<script type="text/javascript">
+						function keputusanBPklt() {
+							var xhttp = new XMLHttpRequest();
+							xhttp.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									document.getElementById("keputusan-klt-bp").innerHTML = this.responseText;
+								}
+							};
+							xhttp.open("GET", "./keputusan/klt/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
+							xhttp.send();
+							console.log("BP-Berjaya");
+						}
+						
+						document.addEventListener('DOMContentLoaded', function () {
+							keputusanBPklt();
+							setInterval(keputusanBPklt, 30000);
+							console.log("BP-Mula");
 						});
 					</script>
 					<div class="keputusan latar-bl">
@@ -902,36 +902,6 @@
 						<div style="padding: 0px 8px;">TERENGGANU<br/>ترڠݢانو</div>
 						<div class="keputusan-negeri-peletakganti"><img src="./aset/negeri/peletakganti.SVG" style="width: 50px;"></div>
 					</div>
-					<div class="keputusan latar-bn">
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bp.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-								<div class="keputusan-anak-nama-bekas">
-									<div class="keputusan-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
-								</div>
-								<div class="keputusan-anak-kerusi-angka-bekas">
-								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-trg-bp" class="keputusan-anak-kerusi-angka">0</div>
-									</div>
-								</div>
-					</div>
-					<script type="text/javascript">
-						function keputusanBPtrg() {
-							var xhttp = new XMLHttpRequest();
-							xhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-trg-bp").innerHTML = this.responseText;
-								}
-							};
-							xhttp.open("GET", "./keputusan/trg/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
-							xhttp.send();
-							console.log("BP-Berjaya");
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBPtrg();
-							setInterval(keputusanBPtrg, 30000);
-							console.log("BP-Mula");
-						});
-					</script>
 					<div class="keputusan latar-ps">
 								<div class="keputusan-anak-logo"><img src="./aset/parti/k-ps.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 								<div class="keputusan-anak-nama-bekas">
@@ -960,6 +930,36 @@
 							keputusanPNtrg();
 							setInterval(keputusanPNtrg, 30000);
 							console.log("PN-Mula");
+						});
+					</script>
+					<div class="keputusan latar-bn">
+								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bp.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+								<div class="keputusan-anak-nama-bekas">
+									<div class="keputusan-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
+								</div>
+								<div class="keputusan-anak-kerusi-angka-bekas">
+								<div class="keputusan-anak-kerusi">
+										<div id="keputusan-trg-bp" class="keputusan-anak-kerusi-angka">0</div>
+									</div>
+								</div>
+					</div>
+					<script type="text/javascript">
+						function keputusanBPtrg() {
+							var xhttp = new XMLHttpRequest();
+							xhttp.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									document.getElementById("keputusan-trg-bp").innerHTML = this.responseText;
+								}
+							};
+							xhttp.open("GET", "./keputusan/trg/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
+							xhttp.send();
+							console.log("BP-Berjaya");
+						}
+						
+						document.addEventListener('DOMContentLoaded', function () {
+							keputusanBPtrg();
+							setInterval(keputusanBPtrg, 30000);
+							console.log("BP-Mula");
 						});
 					</script>
 					<div class="keputusan latar-md"> <!--style="box-shadow: yellow 0px 0px 20px, black 0px 0px 5px;"-->
