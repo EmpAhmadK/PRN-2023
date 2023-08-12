@@ -81,16 +81,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bp" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-mys-bp" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanBP() {
+						function keputusanBPmys() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bp").innerHTML = this.responseText;
+									document.getElementById("keputusan-mys-bp").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/mys/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -99,8 +99,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBP();
-							setInterval(keputusanBP, 30000);
+							keputusanBPmys();
+							setInterval(keputusanBPmys, 30000);
 							console.log("BP-Mula");
 						});
 					</script>
@@ -111,16 +111,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-mys-pn" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanPN() {
+						function keputusanPNmys() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-pn").innerHTML = this.responseText;
+									document.getElementById("keputusan-mys-pn").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/mys/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -129,8 +129,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanPN();
-							setInterval(keputusanPN, 30000);
+							keputusanPNmys();
+							setInterval(keputusanPNmys, 30000);
 							console.log("PN-Mula");
 						});
 					</script>
@@ -141,16 +141,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-md" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-mys-md" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanMD() {
+						function keputusanMDmys() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-md").innerHTML = this.responseText;
+									document.getElementById("keputusan-mys-md").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/mys/keputusan-md.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -159,8 +159,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanMD();
-							setInterval(keputusanBN, 30000);
+							keputusanMDmys();
+							setInterval(keputusanMDmys, 30000);
 							console.log("MD-Mula");
 						});
 					</script>
@@ -171,15 +171,15 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-mys-bl" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					<script>
-						function keputusanBL() {
+						function keputusanBLmys() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bl").innerHTML = this.responseText;
+									document.getElementById("keputusan-mys-bl").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/mys/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -188,8 +188,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBL();
-							setInterval(keputusanBL, 30000);
+							keputusanBLmys();
+							setInterval(keputusanBLmys, 30000);
 							console.log("BL-Mula");
 						});
 					
@@ -229,16 +229,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bp" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-kdh-bp" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanBP() {
+						function keputusanBPkdh() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bp").innerHTML = this.responseText;
+									document.getElementById("keputusan-kdh-bp").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/kdh/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -247,8 +247,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBP();
-							setInterval(keputusanBP, 30000);
+							keputusanBPkdh();
+							setInterval(keputusanBPkdh, 30000);
 							console.log("BP-Mula");
 						});
 					</script>
@@ -259,16 +259,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-kdh-pn" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanPN() {
+						function keputusanPNkdh() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-pn").innerHTML = this.responseText;
+									document.getElementById("keputusan-kdh-pn").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/kdh/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -277,8 +277,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanPN();
-							setInterval(keputusanPN, 30000);
+							keputusanPNkdh();
+							setInterval(keputusanPNkdh, 30000);
 							console.log("PN-Mula");
 						});
 					</script>
@@ -289,15 +289,15 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-kdh-bl" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					<script>
-						function keputusanBL() {
+						function keputusanBLkdh() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bl").innerHTML = this.responseText;
+									document.getElementById("keputusan-kdh-bl").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/kdh/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -306,8 +306,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBL();
-							setInterval(keputusanBL, 30000);
+							keputusanBLkdh();
+							setInterval(keputusanBLkdh, 30000);
 							console.log("BL-Mula");
 						});
 					
@@ -347,16 +347,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bp" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-klt-bp" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanBP() {
+						function keputusanBPklt() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bp").innerHTML = this.responseText;
+									document.getElementById("keputusan-klt-bp").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/klt/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -365,8 +365,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBP();
-							setInterval(keputusanBP, 30000);
+							keputusanBPklt();
+							setInterval(keputusanBPklt, 30000);
 							console.log("BP-Mula");
 						});
 					</script>
@@ -377,16 +377,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-klt-pn" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanPN() {
+						function keputusanPNklt() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-pn").innerHTML = this.responseText;
+									document.getElementById("keputusan-klt-pn").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/klt/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -395,8 +395,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanPN();
-							setInterval(keputusanPN, 30000);
+							keputusanPNklt();
+							setInterval(keputusanPNklt, 30000);
 							console.log("PN-Mula");
 						});
 					</script>
@@ -407,15 +407,15 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-klt-bl" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					<script>
-						function keputusanBL() {
+						function keputusanBLklt() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bl").innerHTML = this.responseText;
+									document.getElementById("keputusan-klt-bl").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/klt/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -424,8 +424,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBL();
-							setInterval(keputusanBL, 30000);
+							keputusanBLklt();
+							setInterval(keputusanBLklt, 30000);
 							console.log("BL-Mula");
 						});
 					
@@ -465,16 +465,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bp" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-ngs-bp" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanBP() {
+						function keputusanBPngs() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bp").innerHTML = this.responseText;
+									document.getElementById("keputusan-ngs-bp").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/ngs/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -483,8 +483,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBP();
-							setInterval(keputusanBP, 30000);
+							keputusanBPngs();
+							setInterval(keputusanBPngs, 30000);
 							console.log("BP-Mula");
 						});
 					</script>
@@ -495,16 +495,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-ngs-pn" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanPN() {
+						function keputusanPNngs() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-pn").innerHTML = this.responseText;
+									document.getElementById("keputusan-ngs-pn").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/ngs/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -513,8 +513,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanPN();
-							setInterval(keputusanPN, 30000);
+							keputusanPNngs();
+							setInterval(keputusanPNngs, 30000);
 							console.log("PN-Mula");
 						});
 					</script>
@@ -525,16 +525,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-md" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-ngs-md" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanMD() {
+						function keputusanMDngs() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-md").innerHTML = this.responseText;
+									document.getElementById("keputusan-ngs-md").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/ngs/keputusan-md.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -543,8 +543,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanMD();
-							setInterval(keputusanBN, 30000);
+							keputusanMDngs();
+							setInterval(keputusanMDngs, 30000);
 							console.log("MD-Mula");
 						});
 					</script>
@@ -555,15 +555,15 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-ngs-bl" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					<script>
-						function keputusanBL() {
+						function keputusanBLngs() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bl").innerHTML = this.responseText;
+									document.getElementById("keputusan-ngs-bl").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/ngs/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -572,8 +572,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBL();
-							setInterval(keputusanBL, 30000);
+							keputusanBLngs();
+							setInterval(keputusanBLngs, 30000);
 							console.log("BL-Mula");
 						});
 					
@@ -613,16 +613,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bp" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-png-bp" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanBP() {
+						function keputusanBPpng() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bp").innerHTML = this.responseText;
+									document.getElementById("keputusan-png-bp").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/png/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -631,8 +631,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBP();
-							setInterval(keputusanBP, 30000);
+							keputusanBPpng();
+							setInterval(keputusanBPpng, 30000);
 							console.log("BP-Mula");
 						});
 					</script>
@@ -643,16 +643,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-png-pn" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanPN() {
+						function keputusanPNpng() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-pn").innerHTML = this.responseText;
+									document.getElementById("keputusan-png-pn").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/png/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -661,8 +661,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanPN();
-							setInterval(keputusanPN, 30000);
+							keputusanPNpng();
+							setInterval(keputusanPNpng, 30000);
 							console.log("PN-Mula");
 						});
 					</script>
@@ -673,16 +673,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-md" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-png-md" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanMD() {
+						function keputusanMDpng() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-md").innerHTML = this.responseText;
+									document.getElementById("keputusan-png-md").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/png/keputusan-md.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -691,8 +691,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanMD();
-							setInterval(keputusanBN, 30000);
+							keputusanMDpng();
+							setInterval(keputusanMD, 30000);
 							console.log("MD-Mula");
 						});
 					</script>
@@ -703,15 +703,15 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-png-bl" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					<script>
-						function keputusanBL() {
+						function keputusanBLpng() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bl").innerHTML = this.responseText;
+									document.getElementById("keputusan-png-bl").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/png/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -720,8 +720,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBL();
-							setInterval(keputusanBL, 30000);
+							keputusanBLpng();
+							setInterval(keputusanBLpng, 30000);
 							console.log("BL-Mula");
 						});
 					
@@ -761,16 +761,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bp" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-sgr-bp" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanBP() {
+						function keputusanBPsgr() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bp").innerHTML = this.responseText;
+									document.getElementById("keputusan-sgr-bp").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/sgr/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -779,8 +779,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBP();
-							setInterval(keputusanBP, 30000);
+							keputusanBPsgr();
+							setInterval(keputusanBPsgr, 30000);
 							console.log("BP-Mula");
 						});
 					</script>
@@ -791,16 +791,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-sgr-pn" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanPN() {
+						function keputusanPNsgr() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-pn").innerHTML = this.responseText;
+									document.getElementById("keputusan-sgr-pn").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/sgr/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -809,8 +809,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanPN();
-							setInterval(keputusanPN, 30000);
+							keputusanPNsgr();
+							setInterval(keputusanPNsgr, 30000);
 							console.log("PN-Mula");
 						});
 					</script>
@@ -821,16 +821,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-md" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-sgr-md" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanMD() {
+						function keputusanMDsgr() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-md").innerHTML = this.responseText;
+									document.getElementById("keputusan-sgr-md").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/sgr/keputusan-md.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -839,8 +839,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanMD();
-							setInterval(keputusanBN, 30000);
+							keputusanMDsgr();
+							setInterval(keputusanMDsgr, 30000);
 							console.log("MD-Mula");
 						});
 					</script>
@@ -851,15 +851,15 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-sgr-bl" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					<script>
-						function keputusanBL() {
+						function keputusanBLsgr() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bl").innerHTML = this.responseText;
+									document.getElementById("keputusan-sgr-bl").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/sgr/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -868,8 +868,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBL();
-							setInterval(keputusanBL, 30000);
+							keputusanBLsgr();
+							setInterval(keputusanBLsgr, 30000);
 							console.log("BL-Mula");
 						});
 					
@@ -909,16 +909,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bp" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-trg-bp" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanBP() {
+						function keputusanBPtrg() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bp").innerHTML = this.responseText;
+									document.getElementById("keputusan-trg-bp").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/trg/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -927,8 +927,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBP();
-							setInterval(keputusanBP, 30000);
+							keputusanBPtrg();
+							setInterval(keputusanBPtrg, 30000);
 							console.log("BP-Mula");
 						});
 					</script>
@@ -939,16 +939,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-trg-pn" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanPN() {
+						function keputusanPNtrg() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-pn").innerHTML = this.responseText;
+									document.getElementById("keputusan-trg-pn").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/trg/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -957,8 +957,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanPN();
-							setInterval(keputusanPN, 30000);
+							keputusanPNtrg();
+							setInterval(keputusanPNtrg, 30000);
 							console.log("PN-Mula");
 						});
 					</script>
@@ -969,16 +969,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-md" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-trg-md" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanMD() {
+						function keputusanMDtrg() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-md").innerHTML = this.responseText;
+									document.getElementById("keputusan-trg-md").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/trg/keputusan-md.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -987,8 +987,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanMD();
-							setInterval(keputusanBN, 30000);
+							keputusanMDtrg();
+							setInterval(keputusanMDtrg, 30000);
 							console.log("MD-Mula");
 						});
 					</script>
@@ -999,15 +999,15 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-trg-bl" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					<script>
-						function keputusanBL() {
+						function keputusanBLtrg() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-bl").innerHTML = this.responseText;
+									document.getElementById("keputusan-trg-bl").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/trg/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -1016,8 +1016,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBL();
-							setInterval(keputusanBL, 30000);
+							keputusanBLtrg();
+							setInterval(keputusanBLtrg, 30000);
 							console.log("BL-Mula");
 						});
 					
@@ -1062,7 +1062,7 @@
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanBP() {
+						function keputusanBPktg() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
@@ -1075,8 +1075,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBP();
-							setInterval(keputusanBP, 30000);
+							keputusanBPktg();
+							setInterval(keputusanBPktg, 30000);
 							console.log("BP-Mula");
 						});
 					</script>
@@ -1087,16 +1087,16 @@
 								</div>
 								<div class="keputusan-anak-kerusi-angka-bekas">
 								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+										<div id="keputusan-ktg-pn" class="keputusan-anak-kerusi-angka">0</div>
 									</div>
 								</div>
 					</div>
 					<script type="text/javascript">
-						function keputusanPN() {
+						function keputusanPNktg() {
 							var xhttp = new XMLHttpRequest();
 							xhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-pn").innerHTML = this.responseText;
+									document.getElementById("keputusan-ktg-pn").innerHTML = this.responseText;
 								}
 							};
 							xhttp.open("GET", "./keputusan/ktg/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
@@ -1105,8 +1105,8 @@
 						}
 						
 						document.addEventListener('DOMContentLoaded', function () {
-							keputusanPN();
-							setInterval(keputusanPN, 30000);
+							keputusanPNktg();
+							setInterval(keputusanPNktg, 30000);
 							console.log("PN-Mula");
 						});
 					</script>
