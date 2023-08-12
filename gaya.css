@@ -471,6 +471,13 @@ h3 {
 	line-height: 1.1;
 }
 
+.keputusan-anak-kerusi-angka-undi {
+	font-size: 3.5em;
+	font-weight: 800;
+	margin-top: 10px;
+	line-height: 1.1;
+}
+
 .keputusan-anak-kerusi-tulis {
 	font-weight:500;
 	margin-top: -10px;
@@ -712,6 +719,12 @@ h3 {
 	.keputusan-anak-kerusi-angka {
 		line-height: 1.5;
 		font-size: 3.5em;
+		align-self: center;
+	}
+	
+	.keputusan-anak-kerusi-angka-undi {
+		line-height: 2.5;
+		font-size: 2em;
 		align-self: center;
 	}
 	
