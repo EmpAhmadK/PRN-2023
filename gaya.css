@@ -517,12 +517,12 @@ button.keputusan-seluruh {
 	border: none;
 	font: inherit;
 	color: white;
-	width: 45%;
+	width: 49%;
 	text-align: center;
 	padding: 10px 10px;
 	margin: 0.5%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 .keputusan-seluruh-negeri {
