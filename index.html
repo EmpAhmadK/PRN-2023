@@ -60,161 +60,80 @@
 			<div class="modul-bekas">
 				<div class="modul-nipis negeri-bekas">
 					<button class="negeri-anak" onclick="bukaNegeri('mys')"><img src="./aset/negeri/malaysia.SVG" class="negeri-anak-gambar"></button>
-					<button class="negeri-anak" onclick="bukaNegeri('kdh')"><img src="./aset/negeri/kedah.SVG" class="negeri-anak-gambar"></button>
-					<button class="negeri-anak" onclick="bukaNegeri('klt')"><img src="./aset/negeri/kelantan.SVG" class="negeri-anak-gambar"></button>
-					<button class="negeri-anak" onclick="bukaNegeri('ngs')"><img src="./aset/negeri/negerisembilan.SVG" class="negeri-anak-gambar"></button>
-					<button class="negeri-anak" onclick="bukaNegeri('png')"><img src="./aset/negeri/pulaupinang.SVG" class="negeri-anak-gambar"></button>
-					<button class="negeri-anak" onclick="bukaNegeri('sgr')"><img src="./aset/negeri/selangor.SVG" class="negeri-anak-gambar"></button>
-					<button class="negeri-anak" onclick="bukaNegeri('trg')"><img src="./aset/negeri/terengganu.SVG" class="negeri-anak-gambar"></button>
-					<button class="negeri-anak" onclick="bukaNegeri('ktg')"><img src="./aset/negeri/kualaterengganu.SVG" class="negeri-anak-gambar"></button>
+					<button class="latar-pn negeri-anak" onclick="bukaNegeri('kdh')"><img src="./aset/negeri/kedah.SVG" class="negeri-anak-gambar"></button>
+					<button class="latar-pn negeri-anak" onclick="bukaNegeri('klt')"><img src="./aset/negeri/kelantan.SVG" class="negeri-anak-gambar"></button>
+					<button class="latar-bp negeri-anak" onclick="bukaNegeri('ngs')"><img src="./aset/negeri/negerisembilan.SVG" class="negeri-anak-gambar"></button>
+					<button class="latar-bp negeri-anak" onclick="bukaNegeri('png')"><img src="./aset/negeri/pulaupinang.SVG" class="negeri-anak-gambar"></button>
+					<button class="latar-bp negeri-anak" onclick="bukaNegeri('sgr')"><img src="./aset/negeri/selangor.SVG" class="negeri-anak-gambar"></button>
+					<button class="latar-pn negeri-anak" onclick="bukaNegeri('trg')"><img src="./aset/negeri/terengganu.SVG" class="negeri-anak-gambar"></button>
+					<button class="latar-ps negeri-anak" onclick="bukaNegeri('ktg')"><img src="./aset/negeri/kualaterengganu.SVG" class="negeri-anak-gambar"></button>
 				</div>
 				<div id="mys" class="modul-lebar keputusan-bekas">
-					<div class="keputusan-negeri">
+					<div class="keputusan-seluruh-negeri">
 						<div style="align-self: center; display: flex;"><img src="./aset/negeri/malaysia.SVG" style="width: 50px;align-self: center;"></div>
 						<div style="padding: 0px 8px;">SEMUA NEGERI<br/>سموا نݢري</div>
-						<div class="keputusan-negeri-peletakganti"><img src="./aset/negeri/peletakganti.SVG" style="width: 50px;"></div>
+						<div class="keputusan-seluruh-negeri-peletakganti"><img src="./aset/negeri/peletakganti.SVG" style="width: 50px;"></div>
 					</div>
-					<div class="keputusan latar-pn">
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-sn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-								<div class="keputusan-anak-nama-bekas">
-									<div class="keputusan-anak-nama">Perikatan Nasional</br>ڤرايکتن ناسيونل</div>
+					<button class="keputusan-seluruh latar-pn" onclick="bukaNegeri('kdh')">
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/negeri/kedah.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">Kedah</br>قدح</div>
 								</div>
-								<div class="keputusan-anak-kerusi-angka-bekas">
-								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-mys-pn" class="keputusan-anak-kerusi-angka">0</div>
-									</div>
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/parti/k-pn.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">Perikatan Nasional</br>ڤرايکتن ناسيونل</div>
 								</div>
-					</div>
-					<script type="text/javascript">
-						function keputusanPNmys() {
-							var xhttp = new XMLHttpRequest();
-							xhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-mys-pn").innerHTML = this.responseText;
-								}
-							};
-							xhttp.open("GET", "./keputusan/mys/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
-							xhttp.send();
-							console.log("PN-Berjaya");
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							keputusanPNmys();
-							setInterval(keputusanPNmys, 30000);
-							console.log("PN-Mula");
-						});
-					</script>
-					<div class="keputusan latar-bp">
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bp.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-								<div class="keputusan-anak-nama-bekas">
-									<div class="keputusan-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
+					</button>
+					<button class="keputusan-seluruh latar-pn" onclick="bukaNegeri('klt')">
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/negeri/kelantan.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">Kelantan</br>کلنتن</div>
 								</div>
-								<div class="keputusan-anak-kerusi-angka-bekas">
-								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-mys-bp" class="keputusan-anak-kerusi-angka">0</div>
-									</div>
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/parti/k-ps.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">Perikatan Nasional</br>ڤرايکتن ناسيونل</div>
 								</div>
-					</div>
-					<script type="text/javascript">
-						function keputusanBPmys() {
-							var xhttp = new XMLHttpRequest();
-							xhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-mys-bp").innerHTML = this.responseText;
-								}
-							};
-							xhttp.open("GET", "./keputusan/mys/keputusan-bp.txt?dc="+"?dc="+(new Date()).getTime(), true);
-							xhttp.send();
-							console.log("BP-Berjaya");
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBPmys();
-							setInterval(keputusanBPmys, 30000);
-							console.log("BP-Mula");
-						});
-					</script>
-					<div class="keputusan latar-md"> <!--style="box-shadow: yellow 0px 0px 20px, black 0px 0px 5px;"-->
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-md.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-								<div class="keputusan-anak-nama-bekas">
-									<div class="keputusan-anak-nama">Ikatan Demokratik Malaysia</br>ايکتن ديموکراتيک مليسيا</div>
+					</button>
+					<button class="keputusan-seluruh latar-bp" onclick="bukaNegeri('ngs')">
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/negeri/negerisembilan.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">Negeri Sembilan</br>نݢري سمبيلن</div>
 								</div>
-								<div class="keputusan-anak-kerusi-angka-bekas">
-								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-mys-md" class="keputusan-anak-kerusi-angka">0</div>
-									</div>
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/parti/k-bp.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
 								</div>
-					</div>
-					<script type="text/javascript">
-						function keputusanMDmys() {
-							var xhttp = new XMLHttpRequest();
-							xhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-mys-md").innerHTML = this.responseText;
-								}
-							};
-							xhttp.open("GET", "./keputusan/mys/keputusan-md.txt?dc="+"?dc="+(new Date()).getTime(), true);
-							xhttp.send();
-							console.log("MD-Berjaya");
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							keputusanMDmys();
-							setInterval(keputusanMDmys, 30000);
-							console.log("MD-Mula");
-						});
-					</script>
-					<div class="keputusan latar-bl">
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bl.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-								<div class="keputusan-anak-nama-bekas">
-									<div class="keputusan-anak-nama">Lain-lain</br>لا<span style="bottom:5px;position:relative;">ء</span>ين٢</div>
+					</button>
+					<button class="keputusan-seluruh latar-bp" onclick="bukaNegeri('png')">
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/negeri/pulaupinang.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">Pulau Pinang</br>ڤولاو ڤينڠ</div>
 								</div>
-								<div class="keputusan-anak-kerusi-angka-bekas">
-								<div class="keputusan-anak-kerusi">
-										<div id="keputusan-mys-bl" class="keputusan-anak-kerusi-angka">0</div>
-									</div>
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/parti/k-bp.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
 								</div>
-					<script>
-						function keputusanBLmys() {
-							var xhttp = new XMLHttpRequest();
-							xhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									document.getElementById("keputusan-mys-bl").innerHTML = this.responseText;
-								}
-							};
-							xhttp.open("GET", "./keputusan/mys/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
-							xhttp.send();
-							console.log("BL-Berjaya");
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							keputusanBLmys();
-							setInterval(keputusanBLmys, 30000);
-							console.log("BL-Mula");
-						});
-					
-						/*function mulaKemasKini () {
-							const angkaBL = document.getElementById('keputusan-bl');
-							
-							setInterval(function () {
-								fetch('keputusan-bl.php').then(function (response) {
-									return response.json();
-								}).then(function (data) {
-									angkaBL.textContent = data.keputusanBL;
-									console.log("Berjaya");
-								}).catch(function (error) {
-									console.log("Ralat");
-									console.log(error);
-								});
-							}, 2000);
-						}
-						
-						document.addEventListener('DOMContentLoaded', function () {
-							mulaKemasKini();
-							console.log("Mula");
-						});*/
-					</script>
-					</div>
+					</button>
+					<button class="keputusan-seluruh latar-bp" onclick="bukaNegeri('sgr')">
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/negeri/selangor.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">Selangor</br>سلاڠور</div>
+								</div>
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/parti/k-bp.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">BN + PH</br>ب.ن. + ڤ.ه‍.</div>
+								</div>
+					</button>
+					<button class="keputusan-seluruh latar-pn" onclick="bukaNegeri('trg')">
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/negeri/terengganu.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">Terengganu</br>ترڠݢانو</div>
+								</div>
+								<div class="keputusan-seluruh-anak-nama-bekas">
+									<img src="./aset/parti/k-ps.SVG" style="width: 100px;" class="keputusan-seluruh-anak-logo-gambar">
+									<div class="keputusan-seluruh-anak-nama">Perikatan Nasional</br>ڤرايکتن ناسيونل</div>
+								</div>
+					</button>
 				</div>
 				<div id="kdh" class="modul-lebar keputusan-bekas" style="display: none">
 					<div class="keputusan-negeri">
